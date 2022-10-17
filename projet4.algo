@@ -1,0 +1,18 @@
+ALGORITHM SommeCommun 
+VAR
+   ti : ARRAY_OF INTEGER[] := [12,13,6,10];
+   t2 : ARRAY_OF INTEGER[] := [13,10,16,15];
+   sum : INTEGER := 0;
+   i,j : INTEGER := 1;
+ BEGIN
+    FOR i FROM 1 To ti. length STEP 1 DO
+    FOR FROM T2 To t2.length STEP 1 DO
+         IF (t1[i] = t2[j]) THEN
+            sum := sum + ti[i]*2;
+         END IF 
+    END FOR
+    END_FOR
+
+    
+   Write("La somme est", sum);
+END

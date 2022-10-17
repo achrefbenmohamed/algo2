@@ -1,0 +1,27 @@
+ALGORITHM HashDistinct
+VAR
+t1: ARRAY_OF INTEGER[] := [12,13,6,10];
+t2 = ARRAY_OF INTEGER [] := [13,10,16,15];
+h : HASH_TABLE<INTEGER, INTEGER>
+BEGIN
+END
+FOR 1 FROM 1 TO t1.length STEP 1 DO
+h.insert(t1[i], 1)
+END_FOR
+FOR 1 FROM 1 TO t2.length STEP 1 DO
+IF (h.lookup (t2[i]) true) THEN
+h.insert(t2[i], 2)
+h.insert (t2[i], ¹)
+ELSE
+END_IF
+END_FOR
+FOR 1 FROM 1 TO t1.length STEP 1 DO
+IF (h.get(t1[i]) = 1) THEN
+sum = sum + tl[i]
+END_IF
+END_FOR
+FOR 1 FROM 1 TO t2.length STEP 1 DO
+IF (h.get(t2[i]) = 1) THEN
+sum = sum + t2[i]
+END_IF
+END_FOR

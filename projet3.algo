@@ -1,0 +1,22 @@
+ALGORITHM CommunHash 
+VAR
+  ti : ARRAY_OF INTEGER[] := [12,13,6,10];
+  t2 : ARRAY_OF INTEGER[] := [13,10,16,15];
+  h : HASH_TABLE <INTEGER,INTEGER>
+BEGIN
+    FOR i FROM 1 To ti.length STEP 1 DO
+     h.insert(ti[i],1)
+   END FOR
+   FOR i FROM 1 To t2.length STEP 1 DO
+     IF (h.lookup(t2[i]) = true) THEN,
+        h.insert(t2[i],2)
+     ELSE
+        h.insert(t2[i],1)
+     END IF 
+   END FOR
+   FOR i FROM 1 To ti. length STEP 1 DO
+      IF (h.get(t1[i]) = 2) THEN
+       sum = sum + ti[i]*2
+      END IF
+  END FOR
+END
